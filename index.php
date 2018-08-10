@@ -9,7 +9,7 @@
     }
 
     function data_dir() {
-        return getcwd()."/events";
+        return getcwd()."/agent_events";
     }
 
     function agent_datafile($agent_id) {
