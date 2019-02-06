@@ -3,6 +3,9 @@
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, 'https://rabotatelegram.etagi.com/public/updates_etagi_main/');
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+        'Content-type: application/json'
+    ));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_TIMEOUT, 1);
