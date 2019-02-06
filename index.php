@@ -1,4 +1,9 @@
 <?php
+
+    error_log(var_export($_POST), true);
+    die();
+
+
     header('Content-Type: application/json');
     $valid_event_types = ["meeting", "presentation", "phone_call"];
 
