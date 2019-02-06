@@ -1,6 +1,6 @@
 <?php
 
-    error_log(print_r($_POST, true));
+    error_log(print_r(file_get_contents('php://input'), true));
     die();
 
 
