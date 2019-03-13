@@ -2,7 +2,7 @@
 
 
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://rabotatelegram.etagi.com/public/updates_etagi_main/');
+    curl_setopt($ch, CURLOPT_URL, 'https://s.esoft.cloud/telegram/receive/8');
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
         'Content-type: application/json'
     ));
