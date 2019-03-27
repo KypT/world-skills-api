@@ -1,8 +1,13 @@
 <?php
-
-
+    if ($_GET["TEST"] == '1') {
+        $uri = 'https://s-test.esoft.cloud/telegram/receive/8';
+    } else {
+        $uri = 'https://s.esoft.cloud/telegram/receive/8';
+    }
+    
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://s.esoft.cloud/telegram/receive/8');
+
+    curl_setopt($ch, CURLOPT_URL, $uri);
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
         'Content-type: application/json'
     ));
@@ -16,10 +21,6 @@
 
     error_log(print_r(file_get_contents('php://input'), true));
     die();
-
-
-
-    /// asdadasd
 
 
     header('Content-Type: application/json');
