@@ -1,6 +1,6 @@
 <?php
     if ($_GET["TEST"] == '1') {
-        $uri = 'https://s-test.esoft.cloud/telegram/receive/13';
+        $uri = 'https://notifications.esoft.cloud/telegram/receive/13';
     } else {
         $uri = 'https://s.esoft.cloud/telegram/receive/8';
     }
